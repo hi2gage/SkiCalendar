@@ -145,6 +145,7 @@
 				1C3FFCDA29B6F0EE00D786A8 /* Sources */,
 				1C3FFCDB29B6F0EE00D786A8 /* Frameworks */,
 				1C3FFCDC29B6F0EE00D786A8 /* Resources */,
+				1C3FFD1229B6F1AE00D786A8 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -259,6 +260,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C3FFD1229B6F1AE00D786A8 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CI\" = 'true' ]; then\n  echo 'CI environment detected. Not running SwiftLint.'\nelif [ \"$ACTION\" = 'build' ] && [ \"$CONFIGURATION\" = 'Debug' ]; then\n  echo \"No CI environment detected. 'Build' action with 'Debug' configuration detected. Running SwiftLint...\"\n  export PATH=\"$PATH:/opt/homebrew/bin\" # Adds support for Apple Silicon brew directory\n  if mint which swiftlint; then\n    mint run swiftlint\n  else\n    echo 'warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint'\n  fi\nelse\n  echo 'No CI environment detected. Nevertheless, not running SwiftLint.'\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1C3FFCDA29B6F0EE00D786A8 /* Sources */ = {
