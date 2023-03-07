@@ -13,8 +13,21 @@ struct SkiCalendarApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            TabView {
+                ColorDescriptionView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .tabItem {
+                        Label("Color", systemImage: "gear.badge")
+                    }
+                    .tag("test")
+
+                ContentView()
+                    .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                    .tabItem {
+                        Label("Color Select", systemImage: "slider.vertical.3")
+                    }
+                    .tag("Color")
+            }
         }
     }
 }

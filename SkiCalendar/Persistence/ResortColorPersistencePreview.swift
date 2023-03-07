@@ -31,6 +31,7 @@ struct ResortColorPersistencePreview {
             let colorDescription = ColorDescription(context: viewContext)
             colorDescription.color = resort.color.toHex()
             colorDescription.textDescription = resort.rawValue
+            colorDescription.id = UUID()
         }
     }
 }

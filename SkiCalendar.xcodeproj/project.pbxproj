@@ -20,6 +20,9 @@
 		1CED8E5429B715D600FFC35A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5329B715D600FFC35A /* Color+Extension.swift */; };
 		1CED8E5629B716C500FFC35A /* DatesPersistencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5529B716C500FFC35A /* DatesPersistencePreview.swift */; };
 		1CED8E5829B717CD00FFC35A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5729B717CD00FFC35A /* Date+Extension.swift */; };
+		1CED8E5B29B718E600FFC35A /* ColorDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5A29B718E600FFC35A /* ColorDescriptionView.swift */; };
+		1CED8E5D29B719C400FFC35A /* SquareColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5C29B719C400FFC35A /* SquareColorPickerView.swift */; };
+		1CED8E5F29BB010600FFC35A /* ColorDescription+init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5E29BB010600FFC35A /* ColorDescription+init.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		1CED8E5329B715D600FFC35A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		1CED8E5529B716C500FFC35A /* DatesPersistencePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesPersistencePreview.swift; sourceTree = "<group>"; };
 		1CED8E5729B717CD00FFC35A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		1CED8E5A29B718E600FFC35A /* ColorDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDescriptionView.swift; sourceTree = "<group>"; };
+		1CED8E5C29B719C400FFC35A /* SquareColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareColorPickerView.swift; sourceTree = "<group>"; };
+		1CED8E5E29BB010600FFC35A /* ColorDescription+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorDescription+init.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +113,7 @@
 		1C3FFCE029B6F0EE00D786A8 /* SkiCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				1CED8E5929B718D600FFC35A /* ColorPicker */,
 				1CED8E5229B715B500FFC35A /* Extensions */,
 				1C3FFCE129B6F0EE00D786A8 /* SkiCalendarApp.swift */,
 				1CED8E4F29B7150C00FFC35A /* Persistence */,
@@ -159,8 +166,18 @@
 			children = (
 				1CED8E5329B715D600FFC35A /* Color+Extension.swift */,
 				1CED8E5729B717CD00FFC35A /* Date+Extension.swift */,
+				1CED8E5E29BB010600FFC35A /* ColorDescription+init.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1CED8E5929B718D600FFC35A /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				1CED8E5A29B718E600FFC35A /* ColorDescriptionView.swift */,
+				1CED8E5C29B719C400FFC35A /* SquareColorPickerView.swift */,
+			);
+			path = ColorPicker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,13 +333,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CED8E5629B716C500FFC35A /* DatesPersistencePreview.swift in Sources */,
+				1CED8E5B29B718E600FFC35A /* ColorDescriptionView.swift in Sources */,
 				1C3FFCE229B6F0EE00D786A8 /* SkiCalendarApp.swift in Sources */,
+				1CED8E5D29B719C400FFC35A /* SquareColorPickerView.swift in Sources */,
 				1CED8E5429B715D600FFC35A /* Color+Extension.swift in Sources */,
 				1C3FFCE429B6F0EE00D786A8 /* Persistence.swift in Sources */,
 				1C3FFCE929B6F0EE00D786A8 /* ContentView.swift in Sources */,
 				1CED8E5829B717CD00FFC35A /* Date+Extension.swift in Sources */,
 				1C3FFCE729B6F0EE00D786A8 /* SkiCalendar.xcdatamodeld in Sources */,
 				1CED8E5129B7158100FFC35A /* ResortColorPersistencePreview.swift in Sources */,
+				1CED8E5F29BB010600FFC35A /* ColorDescription+init.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
