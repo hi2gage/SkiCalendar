@@ -16,6 +16,10 @@
 		1C3FFCF929B6F0EF00D786A8 /* SkiCalendarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FFCF829B6F0EF00D786A8 /* SkiCalendarTests.swift */; };
 		1C3FFD0329B6F0EF00D786A8 /* SkiCalendarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FFD0229B6F0EF00D786A8 /* SkiCalendarUITests.swift */; };
 		1C3FFD0529B6F0EF00D786A8 /* SkiCalendarUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C3FFD0429B6F0EF00D786A8 /* SkiCalendarUITestsLaunchTests.swift */; };
+		1CED8E5129B7158100FFC35A /* ResortColorPersistencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5029B7158100FFC35A /* ResortColorPersistencePreview.swift */; };
+		1CED8E5429B715D600FFC35A /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5329B715D600FFC35A /* Color+Extension.swift */; };
+		1CED8E5629B716C500FFC35A /* DatesPersistencePreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5529B716C500FFC35A /* DatesPersistencePreview.swift */; };
+		1CED8E5829B717CD00FFC35A /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CED8E5729B717CD00FFC35A /* Date+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		1C3FFCFE29B6F0EF00D786A8 /* SkiCalendarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkiCalendarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C3FFD0229B6F0EF00D786A8 /* SkiCalendarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiCalendarUITests.swift; sourceTree = "<group>"; };
 		1C3FFD0429B6F0EF00D786A8 /* SkiCalendarUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkiCalendarUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1CED8E5029B7158100FFC35A /* ResortColorPersistencePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResortColorPersistencePreview.swift; sourceTree = "<group>"; };
+		1CED8E5329B715D600FFC35A /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		1CED8E5529B716C500FFC35A /* DatesPersistencePreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesPersistencePreview.swift; sourceTree = "<group>"; };
+		1CED8E5729B717CD00FFC35A /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,9 @@
 		1C3FFCE029B6F0EE00D786A8 /* SkiCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				1CED8E5229B715B500FFC35A /* Extensions */,
 				1C3FFCE129B6F0EE00D786A8 /* SkiCalendarApp.swift */,
-				1C3FFCE329B6F0EE00D786A8 /* Persistence.swift */,
+				1CED8E4F29B7150C00FFC35A /* Persistence */,
 				1C3FFCE829B6F0EE00D786A8 /* ContentView.swift */,
 				1C3FFCEA29B6F0EF00D786A8 /* Assets.xcassets */,
 				1C3FFCEC29B6F0EF00D786A8 /* SkiCalendar.entitlements */,
@@ -133,6 +142,25 @@
 				1C3FFD0429B6F0EF00D786A8 /* SkiCalendarUITestsLaunchTests.swift */,
 			);
 			path = SkiCalendarUITests;
+			sourceTree = "<group>";
+		};
+		1CED8E4F29B7150C00FFC35A /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				1C3FFCE329B6F0EE00D786A8 /* Persistence.swift */,
+				1CED8E5029B7158100FFC35A /* ResortColorPersistencePreview.swift */,
+				1CED8E5529B716C500FFC35A /* DatesPersistencePreview.swift */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		1CED8E5229B715B500FFC35A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1CED8E5329B715D600FFC35A /* Color+Extension.swift */,
+				1CED8E5729B717CD00FFC35A /* Date+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,10 +315,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CED8E5629B716C500FFC35A /* DatesPersistencePreview.swift in Sources */,
 				1C3FFCE229B6F0EE00D786A8 /* SkiCalendarApp.swift in Sources */,
+				1CED8E5429B715D600FFC35A /* Color+Extension.swift in Sources */,
 				1C3FFCE429B6F0EE00D786A8 /* Persistence.swift in Sources */,
 				1C3FFCE929B6F0EE00D786A8 /* ContentView.swift in Sources */,
+				1CED8E5829B717CD00FFC35A /* Date+Extension.swift in Sources */,
 				1C3FFCE729B6F0EE00D786A8 /* SkiCalendar.xcdatamodeld in Sources */,
+				1CED8E5129B7158100FFC35A /* ResortColorPersistencePreview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

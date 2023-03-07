@@ -13,10 +13,22 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+
+        // Creates the items Previews
         for _ in 0 ..< 10 {
             let newItem = Item(context: viewContext)
             newItem.timestamp = Date()
         }
+
+        /// Adding the mock `ColorDescription` data
+        let resorts = ResortColorPersistencePreview()
+        resorts.mock(viewContext: viewContext)
+
+        /// Adding the mock `DateEntity` data
+        let dates = DatesPersistencePreview()
+        dates.mock(viewContext: viewContext)
+
+        // Adds them to memeory
         do {
             try viewContext.save()
         } catch {
