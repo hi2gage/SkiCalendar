@@ -63,6 +63,7 @@
 		1CED8E5A29B718E600FFC35A /* ColorDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDescriptionView.swift; sourceTree = "<group>"; };
 		1CED8E5C29B719C400FFC35A /* SquareColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareColorPickerView.swift; sourceTree = "<group>"; };
 		1CED8E5E29BB010600FFC35A /* ColorDescription+init.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ColorDescription+init.swift"; sourceTree = "<group>"; };
+		1CED8E6029BB0EFD00FFC35A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +114,7 @@
 		1C3FFCE029B6F0EE00D786A8 /* SkiCalendar */ = {
 			isa = PBXGroup;
 			children = (
+				1CED8E6029BB0EFD00FFC35A /* Info.plist */,
 				1CED8E5929B718D600FFC35A /* ColorPicker */,
 				1CED8E5229B715B500FFC35A /* Extensions */,
 				1C3FFCE129B6F0EE00D786A8 /* SkiCalendarApp.swift */,
@@ -501,6 +503,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkiCalendar/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -539,6 +542,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SkiCalendar/Info.plist;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
